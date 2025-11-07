@@ -75,11 +75,13 @@ Date:   Wed Nov 5 22:15:21 2025 +0100
     hotfix: corrige la typo 'Wolrd' dans le titre
 
 8. Quel est le message du commit qui a **ajouté le fichier `CHANGELOG.md`** et quelle commande avez-vous utilisé ?
+```
 commit ed62890417d8c8fb880e55a2b8933b80b00ea1bd
 Author: Romain Rosay <romain.rosay@eduvaud.ch>
 Date:   Wed Nov 5 22:15:30 2025 +0100
 
     docs: ajoute un changelog de base
+```
 J'ai recherché manuellement
 
 ### Partie 4 — Branches et fusions
@@ -96,8 +98,10 @@ git branch --merge
 ```
 donc aucune branche
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ? 
+```
 git branch -a --no-merged
   remotes/origin/experiment/dark-mode
+```
 
 ### Partie 5 — Analyse du contenu
 
