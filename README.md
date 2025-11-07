@@ -85,7 +85,19 @@ J'ai recherché manuellement
 ### Partie 4 — Branches et fusions
 
 9. Quelles branches ont été fusionnées dans `main` ?  
+```
+git branch --merge
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature/header
+  remotes/origin/feature/login
+  remotes/origin/hotfix/typo
+  remotes/origin/main
+```
+donc aucune branche
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ? 
+git branch -a --no-merged
+  remotes/origin/experiment/dark-mode
 
 ### Partie 5 — Analyse du contenu
 
