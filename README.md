@@ -59,10 +59,28 @@ et la première branch est la branche principal
 ### Partie 3 — Historique et commits
 
 4. Quel est le message du **premier commit** du projet ?  
+```
+git log
+message : Initial commit: structure HTML/CSS/JS + README + docs
+```
 5. Trouvez le commit où une **clé API** a été ajoutée par erreur. Quel est son identifiant (hash court) ?  
+bea2d1aeaecd11
 6. Quel commit a ensuite corrigé cette erreur ?  
+le suivant
 7. Trouvez le commit où le **titre de la page d'accueil** a été corrigé.  
+commit 6317c073f7514d580522c90fa1f0f0402066a48f (origin/hotfix/typo)
+Author: Romain Rosay <romain.rosay@eduvaud.ch>
+Date:   Wed Nov 5 22:15:21 2025 +0100
+
+    hotfix: corrige la typo 'Wolrd' dans le titre
+
 8. Quel est le message du commit qui a **ajouté le fichier `CHANGELOG.md`** et quelle commande avez-vous utilisé ?
+commit ed62890417d8c8fb880e55a2b8933b80b00ea1bd
+Author: Romain Rosay <romain.rosay@eduvaud.ch>
+Date:   Wed Nov 5 22:15:30 2025 +0100
+
+    docs: ajoute un changelog de base
+J'ai recherché manuellement
 
 ### Partie 4 — Branches et fusions
 
