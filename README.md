@@ -132,6 +132,8 @@ chore(config): retire la clé API et documente la bonne pratique
 ### Partie 6 — Réflexion
 
 15. Pourquoi est-il important de **taguer** des versions dans un projet ?  
-16. Que peut-on déduire du style de travail de l'équipe à partir de cet historique GIT ?  
+Pour connaitre s'il y a eu des changements majeurs, correction de bug et petit changement.
+16. Que peut-on déduire du style de travail de l'équipe à partir de cet historique GIT ?
+L'équipe de sait pas trop quoi commit dans les fichiers, le nommage est bon
 
 Bonne chance, et surtout... **ne vous perdez pas dans le log !** 😉
