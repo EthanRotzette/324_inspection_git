@@ -88,7 +88,7 @@ J'ai recherché manuellement
 
 9. Quelles branches ont été fusionnées dans `main` ?  
 ```
-git branch --merge
+git branch --all --merge
 * main
   remotes/origin/HEAD -> origin/main
   remotes/origin/feature/header
@@ -102,13 +102,32 @@ donc aucune branche
 git branch -a --no-merged
   remotes/origin/experiment/dark-mode
 ```
-
+c'est une branche expérimental
 ### Partie 5 — Analyse du contenu
 
 11. Quelle est la **différence principale** entre les fichiers `index.html` dans les versions `v0.1` et `v0.2` et quelle commande permet de le voir rapidement ?  
+```
+git diff v0.1 v0.2 index.html
+```
+la différence principal est : 
+```
+<header><nav><a href="/">Accueil</a> | <a href="#">Contact</a></nav></header>
+```
+
 12. Que contient la branche `feature/login` ?  
+```
+git switch feature/login
+git show
+ou git branch -v
+```
+
 13. Dans quelle branche a été ajouté le code pour le **mode sombre** ?  
+```
+  remotes/origin/experiment/dark-mode
+```
+
 14. Quelle bonne pratique de sécurité est évoquée dans les commits du fichier `config.js` ?
+chore(config): retire la clé API et documente la bonne pratique
 
 ### Partie 6 — Réflexion
 
