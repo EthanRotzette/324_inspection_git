@@ -64,10 +64,19 @@ git log
 message : Initial commit: structure HTML/CSS/JS + README + docs
 ```
 5. Trouvez le commit où une **clé API** a été ajoutée par erreur. Quel est son identifiant (hash court) ?  
+```
+git log --online | grep -i api
+```
 bea2d1aeaecd11
-6. Quel commit a ensuite corrigé cette erreur ?  
+6. Quel commit a ensuite corrigé cette erreur ?
+```
+git log --online | grep -i api
+```
 le suivant
-7. Trouvez le commit où le **titre de la page d'accueil** a été corrigé.  
+7. Trouvez le commit où le **titre de la page d'accueil** a été corrigé.
+```
+git log --online | grep -i titre
+```
 commit 6317c073f7514d580522c90fa1f0f0402066a48f (origin/hotfix/typo)
 Author: Romain Rosay <romain.rosay@eduvaud.ch>
 Date:   Wed Nov 5 22:15:21 2025 +0100
@@ -128,7 +137,7 @@ ou git branch -v
 
 14. Quelle bonne pratique de sécurité est évoquée dans les commits du fichier `config.js` ?
 chore(config): retire la clé API et documente la bonne pratique
-
+git log --oneline config.js
 ### Partie 6 — Réflexion
 
 15. Pourquoi est-il important de **taguer** des versions dans un projet ?  
